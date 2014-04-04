@@ -7,3 +7,8 @@ var Game = Backbone.Model.extend({
     return '/'
   }
 })
+
+var GameCollection = Backbone.Model.extend({
+  model: Game,
+  url: '/game'
+})

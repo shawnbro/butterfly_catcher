@@ -36,7 +36,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'capybara'
   gem 'shoulda-matchers'
-  gem 'jasmine-rails'
+  gem 'jasmine'
   gem 'simplecov'
   gem 'launchy'
   gem 'capybara-webkit'
