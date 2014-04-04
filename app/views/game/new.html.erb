@@ -4,4 +4,9 @@
 <% else %>
 <button>Start Game</button>
 <% end %>
-<canvas id='gameScreen' ></canvas>
+<canvas id='gameBoard' ></canvas>
+<script type="text/javascript">
+  $( document ).ready(function() {
+    $('#gameID').append('Game Id: <%= @game.id.to_s %>');
+  })
+</script>

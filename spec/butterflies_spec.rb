@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "Butterfly" do 
-  let(:butterfly) { Butterfly.create( { name: "monarch", description: "large migratory American butterfly having deep orange wings with black and white markings; the larvae feed on milkweed", point_value: 25 } ) }
+  let(:butterfly) { Butterfly.new( { name: "monarch", description: "large migratory American butterfly having deep orange wings with black and white markings; the larvae feed on milkweed", pointValue: 25 } ) }
   
   it "has a name" do 
     expect(butterfly.name).to eq("monarch")
@@ -12,6 +12,6 @@ describe "Butterfly" do
   end
 
   it "has a point value" do 
-    expect(butterfly.point_value). to eq(25)
+    expect(butterfly.pointValue).to eq(25)
   end
 end

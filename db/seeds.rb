@@ -11,4 +11,4 @@
 #   Butterfly.create({ name: butterfly })
 # end
 
-Butterfly.create({ name: 'monarch', description: 'large migratory American butterfly having deep orange wings with black and white markings; the larvae feed on milkweed'})
+Butterfly.create({ name: 'monarch', description: 'large migratory American butterfly having deep orange wings with black and white markings; the larvae feed on milkweed', pointValue: 25})
