@@ -8,5 +8,6 @@
 <script type="text/javascript">
   $( document ).ready(function() {
     $('#gameID').append('Game Id: <%= @game.id.to_s %>');
+    $('#highScore').append('High Score: <%= @game.highScore %> ')
   })
 </script>
