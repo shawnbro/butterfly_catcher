@@ -96,6 +96,8 @@ GEM
     optionable (0.2.0)
     origin (2.1.1)
     phantomjs (1.9.7.0)
+    phaser-rails (2.0.2.0)
+      railties
     polyglot (0.3.4)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -188,6 +190,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   mongoid!
+  phaser-rails
   pry-rails
   rails (= 4.0.3)
   rspec-rails

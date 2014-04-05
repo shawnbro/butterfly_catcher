@@ -6,7 +6,7 @@ describe 'user sees butterfly' do
       expect(page).to have_content 'Butterflies: monarch'
     end
     within('#currentButterfly') do 
-      expect(page).to have_content 'monarch'
+      expect(page).to have_content 'Butterfly: monarch'
     end
   end
 end

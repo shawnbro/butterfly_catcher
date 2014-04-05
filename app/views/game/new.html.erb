@@ -5,10 +5,10 @@
 <button>Start Game</button>
 <% end %>
 <canvas id='gameBoard' ></canvas>
-<script type="text/javascript">
-  $( document ).ready(function() {
-    // $('#gameID').append('Game Id: <%= @game.id.to_s %>');
-    // $('#highScore').append('High Score: <%= @game.highScore %> ')
-    // $('#butterflyIds').append('<%= @butterflies %>')
-  })
+<script type="template" class="template">
+  <div id='gameStats'>
+    <div id='gameID'>Game ID: <%%= game.get('_id') %></div>
+    <div id='highScore'>High Score: </div>
+    <div id='currentScore'>Current Score: </div>
+  </div>
 </script>

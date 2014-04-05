@@ -11,4 +11,12 @@ class GameController < ApplicationController
       @game = Game.create!
     end
   end
+
+  def update
+    if @game.save
+      render json: @game
+    else
+      render status: 400, nothing: true
+    end
+  end
 end
