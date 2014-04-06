@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require underscore
 //= require backbone
+//= require phaser
 //= require_tree .
