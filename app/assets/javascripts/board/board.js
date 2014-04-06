@@ -1,4 +1,4 @@
-var game = new Phaser.Game(800, 600, Phaser.AUTO, 'butterfly-catcher', { preload: preload, create: create });
+var game = new Phaser.Game(800, 600, Phaser.AUTO, 'butterfly-catcher', { preload: preload, create: create, update: update, render: render  });
 
 function preload() {
     game.load.image('net', 'assets/sprites/butterfly-net.png');
@@ -19,6 +19,8 @@ function create() {
     // Add sprites
     butterfly = game.add.sprite(Math.random()*800,Math.random()*600, 'butterfly');
     net = game.add.sprite(0, 0, 'net');
+    net.enableBody = true
+    butterfly.enableBody = true;
 
     //Set gravity params
     game.physics.p2.gravity.y = 100;
@@ -44,6 +46,7 @@ function create() {
     net.body.bounce.set(.1);
     net.body.gravity.set(0, 40)
 
+
     //  Here we add a new animation called 'fly'
     //  Because we didn't give any other parameters it's going to make an animation from all available frames in the 'mummy' sprite sheet
     butterfly.animations.add('fly');
@@ -56,30 +59,37 @@ function create() {
     //  true means it will loop when it finishes
     butterfly.animations.play('fly', 8, true);
 
-    //create input listener for arrows
-    cursors = game.input.keyboard.createCursorKeys();
-    console.log(cursors);
+
 }
 function update() {
 
-    net.body.setZeroVelocity();
+    game.input.keyboard.onDownCallback = function( e ){
+        if(e.keyCode == Phaser.Keyboard.UP){
+            net.body.velocity.y = -100;
+        }
+        if(e.keyCode == Phaser.Keyboard.LEFT){
+            net.body.velocity.x = -100;
+        }
+        if(e.keyCode == Phaser.Keyboard.DOWN){
+            net.body.velocity.y = 100;
+        }
+        if(e.keyCode == Phaser.Keyboard.RIGHT){
+            net.body.velocity.x = 100;
+        }
+    }
 
-    if (cursors.left.isDown)
-    {
-        net.body.moveLeft(400);
-    }
-    else if (cursors.right.isDown)
-    {
-        net.body.moveRight(400);
-    }
+    game.physics.arcade.collide(butterfly, net, collisionHandler, null, this);
 
-    if (cursors.up.isDown)
-    {
-        net.body.moveUp(400);
-    }
-    else if (cursors.down.isDown)
-    {
-        net.body.moveDown(400);
-    }
+
+}
+
+function collisionHandler (obj1, obj2) {
+
+    //  The two sprites are colliding
+    game.stage.backgroundColor = '#992d2d';
+
+}
+
+function render() {
 
 }
