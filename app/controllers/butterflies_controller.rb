@@ -13,15 +13,16 @@ class ButterfliesController < ApplicationController
   end
 
   def update
+    @game = Game.find(params[:game_id])
     @butterfly = Butterfly.find(params[:_id][:$oid])
-    @butterfly.game_id = @game._id
 
     if !@butterfly.caught && params[:caught] 
       @butterfly.caught = params[:caught]
       @game.currentScore += @butterfly.pointValue
+      @game.save
     end
 
-    if @butterfly.save && @game.save
+    if @butterfly.save
       render json: @butterfly
     else
       render status: 400, nothing: true

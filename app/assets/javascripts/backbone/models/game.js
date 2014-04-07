@@ -6,5 +6,6 @@ var Game = Backbone.Model.extend({
     currentScore: 0
   },
 
-  urlRoot: "/games"
+  urlRoot: "/games",
+
 });

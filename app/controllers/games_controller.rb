@@ -6,6 +6,7 @@ class GamesController < ApplicationController
   end
 
   def create
+    @butterfly = Butterfly.all.sample
     @game = Game.create!
   end
 
@@ -14,6 +15,8 @@ class GamesController < ApplicationController
   end
 
   def update
+    @game = Game.find_by(id: params[:_id])
+    @game.currentScore = params[:currentScore]
     if @game.save
       render json: @game
     else

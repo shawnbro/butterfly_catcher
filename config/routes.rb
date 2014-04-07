@@ -4,6 +4,6 @@ ButterflyCatcher::Application.routes.draw do
   # POST /games/:id/butterflies
   # PUT /butterflies/:id
   resources :games, except: [:index] do
-    resources :butterflies, shallow: true
+    resources :butterflies
   end
 end

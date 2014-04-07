@@ -21,13 +21,19 @@
 
 $( document ).ready(function() {
   window.game = new Game( { _id: gameID } );
-  window.newButterfly = new Butterfly( { game_id: gameID, name: window.butterfly } );
+  window.newButterfly = new Butterfly( { game_id: gameID, 
+    name: window.butterflyName, 
+    description: window.butterflyDescription, 
+    pointValue: window.butterflyPointValue 
+  });
   newButterfly.save();
   window.allButterflies = new ButterflyCollection( { game: window.game } );
   allButterflies.fetch();
   // window.butterfly = new Butterfly({})
 
-  game.on("change:currentScore", function(game, score) {
-    $("#currentScore").text(score);
+  newButterfly.on("change:caught", function(butterfly, caught) {
+    game.set({currentScore: parseInt(currentScore + newButterfly.get('pointValue'))});
+    game.save();
+    $("#currentScore").text(game.get('currentScore'));
   });
 });

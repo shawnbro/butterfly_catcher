@@ -1,3 +1,4 @@
+<div id='currentScore'></div>
 <h1>Butterfly Catcher</h1>
 <% if @game.has_attribute?(:_id)  %>
   <h2><%= 'Catch Butterflies!'%></h2>
@@ -6,7 +7,11 @@
 <% end %>
 <script>
   window.gameID = "<%= @game._id %>";
-  window.butterfly = '<%= Butterfly.all.sample.name %>'
+  window.currentScore = parseInt("<%= @game.currentScore %>");
+  window.highScore = parseInt("<%= @game.highScore %>");
+  window.butterflyName = '<%= @butterfly.name %>'
+  window.butterflyDescription ='<%= @butterfly.description %>' 
+  window.butterflyPointValue ='<%= @butterfly.pointValue %>'
 </script>
 <script>
 // setUpBoard = function(gameData) {
