@@ -10,19 +10,24 @@ var Butterfly = Backbone.Model.extend({
   },
 
   catch: function() {
-    this.set({caught: true});
+    this.set({ caught: true });
     this.save();
   },
 
   url: function() {
-    return '/butterflies/new'
+    return '/butterflies/' + this.get("_id");
   }
 })
 
 var ButterflyCollection = Backbone.Collection.extend({
   model: Butterfly,
-  url: "/butterflies"
-})
+  url: function() {
+    return "/games" + this.game.get("_id") + "/butterflies";
+  }
+});
+
+
+new ButterflyCollection({game: gameModel});
 
 // var ButterflyView = Backbone.View.extend({
 //   tagName: "canvas",
@@ -57,14 +62,16 @@ function pickButterfly(butterflies) {
   var butterflyIndex = Math.floor(Math.random() * butterflies.length )
   butterfly = butterflies[butterflyIndex]
   // add butterfly to page
-  $("<div id='currentButterfly'>Butterfly: "+ butterfly.attributes.name + "</div>").appendTo("body");
+  $("<div id='currentButterfly'>Butterfly: "+ butterfly.get("name") + "</div>").appendTo("body");
+  $("<div id='currentButterfly'>Caught: "+ butterfly.attributes.caught + "</div>").appendTo("#currentButterfly");
   // set butterfly's game ID
   butterfly.set( { game_id: $('#gameID').text().split(': ')[1] } );
   butterfly.save();
 }
 
 $( document ).ready(function() {
-  var butterflies = new ButterflyCollection;
+  var game = new Game();
+  var butterflies = new ButterflyCollection({game: game});
   butterflies.fetch().done(function() {
     listButterflies(butterflies.toArray());
   }).done(function() {

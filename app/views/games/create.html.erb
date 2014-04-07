@@ -1,0 +1,16 @@
+<h1>Butterfly Catcher</h1>
+<% if @game.has_attribute?(:_id)  %>
+<h2><%= 'Catch Butterflies!'%></h2>
+<% else %>
+<button>Start Game</button>
+<% end %>
+<script>
+  window.gameID = "<%= @game._id %>";
+</script>
+<script>
+  // <div id='gameStats'>
+  //   <div id='gameID'>Game ID: <%%= game.get('_id') %></div>
+  //   <div id='highScore'>High Score: </div>
+  //   <div id='currentScore'>Current Score: </div>
+  // </div>
+</script>

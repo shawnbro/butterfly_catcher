@@ -1,5 +1,9 @@
 ButterflyCatcher::Application.routes.draw do
-  root 'game#new'
-  resources :butterflies, only: [:index, :new, :update]
-  resources :game, only: [:index, :update]
+  root 'games#create'
+  
+  # POST /games/:id/butterflies
+  # PUT /butterflies/:id
+  resources :games, except: [:index] do
+    resources :butterflies, shallow: true
+  end
 end

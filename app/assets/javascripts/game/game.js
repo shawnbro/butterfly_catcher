@@ -6,17 +6,15 @@ var Game = Backbone.Model.extend({
     currentScore: 0
   },
 
-  url: function() {
-    return '/'
-  },
-})
+  urlRoot: "/games"
+});
 
-var GameCollection = Backbone.Model.extend({
-  model: Game,
-  url: function() {
-    return this._id ? '/game/' + this.id : '/game';
-  }
-})
+// var GameCollection = Backbone.Model.extend({
+//   model: Game,
+//   url: function() {
+//     return this._id ? '/game/' + this.id : '/game';
+//   }
+// })
 
 // var GameView = Backbone.View.extend({
 //   tagName: 'div',
