@@ -1,11 +1,12 @@
 <h1>Butterfly Catcher</h1>
 <% if @game.has_attribute?(:_id)  %>
-<h2><%= 'Catch Butterflies!'%></h2>
+  <h2><%= 'Catch Butterflies!'%></h2>
 <% else %>
-<button>Start Game</button>
+  <button>Start Game</button>
 <% end %>
 <script>
   window.gameID = "<%= @game._id %>";
+  window.butterfly = '<%= Butterfly.all.sample.name %>'
 </script>
 <script>
 // setUpBoard = function(gameData) {
@@ -16,15 +17,4 @@
 //   $('#highScore').append(gameData.responseJSON.highScore)
 //   $('#currentScore').append(gameData.responseJSON.currentScore)
 // }
-
-$( document ).ready(function() {
-  window.game = new Game({_id: gameID});
-  window.butterflies = new ButterflyCollection({ game: window.game });
-  butterflies.fetch();
-  // window.butterfly = new Butterfly({})
-
-  game.on("change:currentScore", function(game, score) {
-    $("#currentScore").text(score);
-  });
-});
 </script>

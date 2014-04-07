@@ -15,5 +15,19 @@
 //= require turbolinks
 //= require underscore
 //= require backbone
+//= require_tree ./backbone/models
+//= require_tree ./backbone/collections
 //= require phaser
-//= require_tree .
+
+$( document ).ready(function() {
+  window.game = new Game( { _id: gameID } );
+  window.newButterfly = new Butterfly( { game_id: gameID, name: window.butterfly } );
+  newButterfly.save();
+  window.allButterflies = new ButterflyCollection( { game: window.game } );
+  allButterflies.fetch();
+  // window.butterfly = new Butterfly({})
+
+  game.on("change:currentScore", function(game, score) {
+    $("#currentScore").text(score);
+  });
+});

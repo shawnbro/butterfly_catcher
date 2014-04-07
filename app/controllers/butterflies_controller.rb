@@ -5,7 +5,11 @@ class ButterfliesController < ApplicationController
   end
 
   def create
+    @butterfly = Butterfly.create(game_id: params[:game_id], name: params[:name], description: params[:description], pointValue: params[:pointValue], caught: params[:caught])
+    render json: @butterfly
+  end
 
+  def show
   end
 
   def update
