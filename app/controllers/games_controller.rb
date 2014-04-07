@@ -17,6 +17,7 @@ class GamesController < ApplicationController
   def update
     @game = Game.find_by(id: params[:_id])
     @game.currentScore = params[:currentScore]
+    @game.highScore = params[:currentScore] if params[:currentScore] > @game.highScore
     if @game.save
       render json: @game
     else
