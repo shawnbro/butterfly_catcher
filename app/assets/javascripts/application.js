@@ -33,7 +33,9 @@ $( document ).ready(function() {
 
   newButterfly.on("change:caught", function(butterfly, caught) {
     game.set({currentScore: parseInt(currentScore + newButterfly.get('pointValue'))});
-    game.save();
-    $("#currentScore").text(game.get('currentScore'));
+    game.save().done(function() {
+      $("#currentScore").text('Current Score: '+parseInt(game.get('currentScore')));
+      $("#highScore").text('High Score: ' + parseInt(game.get('highScore')));      
+    });
   });
 });
