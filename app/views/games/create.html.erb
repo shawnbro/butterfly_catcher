@@ -8,9 +8,23 @@
   window.gameID = "<%= @game._id %>";
 </script>
 <script>
-  // <div id='gameStats'>
-  //   <div id='gameID'>Game ID: <%%= game.get('_id') %></div>
-  //   <div id='highScore'>High Score: </div>
-  //   <div id='currentScore'>Current Score: </div>
-  // </div>
+// setUpBoard = function(gameData) {
+//   $("<div id='gameID'>Game ID: </div>").appendTo('body');
+//   $("<div id='highScore'>High Score: </div>").appendTo('body');
+//   $("<div id='currentScore'>Current Score: </div>").appendTo('body');
+//   $('#gameID').append(gameData.responseJSON._id.$oid);
+//   $('#highScore').append(gameData.responseJSON.highScore)
+//   $('#currentScore').append(gameData.responseJSON.currentScore)
+// }
+
+$( document ).ready(function() {
+  window.game = new Game({_id: gameID});
+  window.butterflies = new ButterflyCollection({ game: window.game });
+  butterflies.fetch();
+  // window.butterfly = new Butterfly({})
+
+  game.on("change:currentScore", function(game, score) {
+    $("#currentScore").text(score);
+  });
+});
 </script>

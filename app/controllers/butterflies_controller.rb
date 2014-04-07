@@ -4,9 +4,11 @@ class ButterfliesController < ApplicationController
     render json: @butterflies
   end
 
-  def update
+  def create
 
-    @game = Game.last
+  end
+
+  def update
     @butterfly = Butterfly.find(params[:_id][:$oid])
     @butterfly.game_id = @game._id
 
