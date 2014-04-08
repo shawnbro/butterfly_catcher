@@ -14,4 +14,8 @@ describe "Butterfly" do
   it "has a point value" do 
     expect(butterfly.pointValue).to eq(25)
   end
+
+  it "defaults to  caught = false" do 
+    expect(butterfly.caught).to be_false
+  end
 end

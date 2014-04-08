@@ -4,7 +4,7 @@ describe("Game", function() {
   beforeEach(function() {
     butterfly = new Butterfly( { _id: 1, name: 'monarch', caught: false } );
     game = new Game;
-    window.gameID = 1;
+    gameID = 1;
   });
 
   it("has an initial high score of 0", function() {

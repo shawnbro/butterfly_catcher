@@ -9,11 +9,11 @@ describe 'user starts game' do
     visit '/'
     expect(page).to have_content 'Butterfly Catcher'
     expect(page).to have_content 'Catch Butterflies!' 
-    expect(page).to have_css '#gameBoard'
-    expect(page).to have_css '#gameID'
-    within('#gameID') do 
-      expect(page).to have_content('Game Id: ' + gameID)
-    end
+    expect(page).to have_css 'canvas'
+    # expect(page).to have_css '#gameID' now in a JS window variable
+    # within('#gameID') do 
+    #   expect(page).to have_content('Game Id: ' + gameID)
+    # end
     expect(page).to have_css '#highScore'
     within('#highScore') do 
       expect(page).to have_content('High Score: 0');
