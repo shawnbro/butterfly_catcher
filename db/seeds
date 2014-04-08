@@ -1,0 +1,202 @@
+Skipper: The skippers are a worldwide family of about 3500 species that appear to be "sister" to the rest of the "true butterflies". The clubs on the tips of the antennae are usually hooked. Our California skippers fall into two or three subfamilies: the spread-wing skippers (Pyrginae), the folded-wing skippers (Hesperiinae), and the Heteropterinae.
+
+The spread-winged skippers are generally dark brown and hold both sets of their wings open when landed. They use a wide variety of hostplants, including oaks, Ceanothus, legumes, mallows, and even saltbush. California genera include Pyrgus, Heliopetes, Erynnis, Thorybes, Epargyreus, and Pholisora.
+
+The folded-wing skippers have a characteristic posture when they land: the forewings are held at a 45o angle to the rest of the body while the hindwing is held open and flat. This gives them a "fighter-jet" like appearance. They are largely orange and tawny, and many have whitish chevrons on the ventral hindwing, although some genera are dark brown. All members of this group feed on grasses or grassy-like plants (like sedges and rushes) as caterpillars, and as a result, they are often called the grass skippers. California genera include Hesperia, Ochlodes, Polites, Poanes, Hylephila, Lerodea, Amblyscirtes, and Atalopedes.
+
+A third subfamily, the Heteropterinae, is weakly differentiated from the other skipper subfamilies, but the lone California representative is distinctive: Carterocephalus palaemon.
+
+{ name: "Carterocephalus palaemon  aka Arctic Skipper", description: "The Arctic Skipper is not truly arctic, but is circumboreal, occurring in cool, wooded, usually streamside habitats across northern Eurasia and North America. Our transect is right at its southern range limit in California. ", pointValue: 25 , image: "http://butterfly.ucdavis.edu/files/butterfly/img/butterfly/small/s_Carterocephalus_palaemon.jpg" }, 
+
+{ name: "Hesperia columbia   Columbian Skipper", description: "The Columbian Skipper is found mainly in the California Coast Range. In the Sierra Nevada it is known from only a handful of localities, mainly on serpentine. Rare!", pointValue: 50 , image: "http://butterfly.ucdavis.edu/files/butterfly/img/butterfly/small/s_Hesperia_columbia.jpg" }, 
+
+{ name: "Pyrgus communis   Common Checkered Skipper", description: "This familiar insect appears to be found from sea level to tree line.", pointValue: 10, image: "http://butterfly.ucdavis.edu/files/butterfly/img/butterfly/small/s_0212.jpg" }, 
+
+{ name: "Pholisora catullus  Common Sooty-Wing", description: "This butterfly used to be fairly common but has recently all-but disappeared.  They hang out mostly in vegetable gardens and vacant lots on weedy Pigweeds." , pointValue: 30 , image: "http://butterfly.ucdavis.edu/files/butterfly/img/butterfly/small/s_P_catullus.jpg" }, 
+
+{ name: "Erynnis icelus  Dreamy Dusky-Wing", description: "This is an uncommon and lesser-known creature, mostly seen along muddy streams, sitting idly with wings fully expanded. ", pointValue: 45, image: "http://butterfly.ucdavis.edu/files/butterfly/img/butterfly/small/s_Erynnis_icelus.jpg"  },
+
+
+{ name: Lerodea eufala  Eufala Skipper, description: "This creature is rather nondescript, shy, and a little awkward.  It has an odd habit of shrugging its wings every time it flies away.  These little buddies live all over the world, from the United States to Argentina and Chile.", pointValue: 30, image: "http://butterfly.ucdavis.edu/files/butterfly/img/butterfly/small/s_L_eufala.jpg" }, 
+
+{ name: Atalopedes campestris   Field Skipper, Sachem, description: , pointValue: , image:  }, 
+
+{ name: Hylephila phyleus   Fiery Skipper, description: , pointValue: , image:  }, 
+
+{ name: Erynnis funeralis   Funereal Dusky-Wing, description: , pointValue: , image:  }, 
+
+{ name: Hesperia lindseyi   Lindsey's Skipper, description: , pointValue: , image:  }, 
+
+{ name: Erynnis tristis   Mournful Dusky-Wing, Sad Dusky-Wing, description: , pointValue: , image:  }, 
+
+{ name: Thorybes mexicana nevada  Nevada Cloudy-Wing, description: , pointValue: , image:  }, 
+
+{ name: Hesperia nevada   Nevada Skipper, description: , pointValue: , image:  }, 
+
+{ name: Thorybes pylades  Northern Cloudy-Wing, description: , pointValue: , image:  }, 
+{ name: Heliopetes ericetorum   Northern White Skipper, description: , pointValue: , image:  }, 
+{ name: Erynnis pacuvius  Pacuvius Duskywing, Grinnell's Duskywing, description: , pointValue: , image:  }, 
+{ name: Erynnis persius   Persius Dusky-Wing, description: , pointValue: , image:  }, 
+{ name: Erynnis propertius  Propertius Dusky-Wing, description: , pointValue: , image:  }, 
+{ name: Amblyscirtes vialis   Roadside Skipper, description: , pointValue: , image:  }, 
+{ name: Polites sabuleti sabuleti   Sandhill Skipper, description: , pointValue: , image:  }, 
+{ name: Hesperia colorado ssp.  Serpentine Colorado Skipper, description: , pointValue: , image:  }, 
+{ name: Epargyreus clarus   Silver-Spotted Skipper, description: , pointValue: , image:  }, 
+{ name: Erynnis brizo lacustra  Sleepy Dusky-Wing, description: , pointValue: , image:  Leather Oak Dusky-Wing, }, 
+{ name: Pyrgus scriptura  Small Checkered Skipper, description: , pointValue: , image:  Least Checkered Skipper, }, 
+{ name: Polites sonora  Sonoran Skipper,  description: , pointValue: , image: }, 
+{ name: Polites sabuleti tecumseh   Tecumseh Skipper, description: , pointValue: , image:  }, 
+{ name: Ochlodes agricola   The Farmer, Rural Skipper, description: , pointValue: , image:  }, 
+{ name: Pyrgus ruralis  Two-Banded Skipper, description: , pointValue: , image:  }, 
+{ name: Poanes melane   Umber Skipper, description: , pointValue: , image:  }, 
+{ name: Hesperia colorado harpalus  West Slope Colorado Skipper, description: , pointValue: , image:  }, 
+{ name: Thorybes diversus   Western Cloudy-Wing, description: , pointValue: , image:  }, 
+{ name: Ochlodes sylvanoides  Woodland Skipper, description: , pointValue: , image:  }, 
+{ name: Hesperia juba   Yuba Skipper,  description: , pointValue: , image: }, 
+{ name: Ochlodes yuma   Yuma Skipper, description: , pointValue: , image:  }, 
+
+Nymphalidae
+With about 6000 species worldwide, the morphological diversity within the brushfoots is immense. There have been decades of debates about how to classify the group and what traits are important and useful. For our purposes, the uniting characteristic of the brushfoots is the reduction of the front pair of legs into small, brush-like appendages that serve no real function, rather like the human appendix or tailbone. As a result, while they still have 3 pairs of legs (an insect characteristic), only two of those leg pairs are actually functional. Brushfoots are some of our largest and recognizable butterflies, including the monarch (Danaus plexippus), painted lady (Vanessa cardui), California tortoiseshell (Nymphalis californica), and mourning cloak (Nymphalis antiopa).
+
+{ name: Speyeria atlantis irene   Atlantis Fritillary, },
+{ name: Chlosyne lacinia  Bordered Patch, }, 
+{ name: Junonia coenia  Buckeye, }, 
+{ name: Phyciodes orseis herlani  California Crescent, }, 
+{ name: Coenonympha tullia california   California Ringlet, }, 
+{ name: Adelpha bredowii californica  California Sister, }, 
+{ name: Nymphalis californica   California Tortoiseshell, }, 
+{ name: Speyeria callippe juba  Callippe Fritillary, }, 
+{ name: Speyeria callippe ssp.  Callippe Fritillary, }, 
+{ name: Speyeria coronis  Crown Fritillary, Coronis Fritillary, }, 
+{ name: Euphydryas editha   Edith's Checkerspot, }, 
+{ name: Polygonia faunus  Faun, Green Comma, }, 
+{ name: Phyciodes campestris campestris/montana   Feather River Crescent, }, 
+{ name: Phyciodes campestris campestris   Field Crescent, }, 
+{ name: Speyeria egleis   Great Basin Fritillary, Egleis Fritillary, }, 
+{ name: Coenonympha tullia ampelos  Great Basin Ringlet, East Slope Ringlet, }, 
+{ name: Cercyonis sthenele silvestris   Great Basin Wood Nymph, }, 
+{ name: Agraulis vanillae   Gulf Fritillary, }, 
+{ name: Chlosyne hoffmanni  Hoffmann's Checkerspot, }, 
+{ name: Speyeria hydaspe  Hydaspe Fritillary, }, 
+{ name: Oeneis chryxus ivallda  Ivallda Arctic, }, 
+{ name: Thessalia leanira   Leanira Checkerspot, }, 
+{ name: Speyeria cybele leto  Leto Fritillary, }, 
+{ name: Limenitis lorquini  Lorquin's Admiral, }, 
+{ name: Nymphalis milberti  Milbert's Tortoiseshell, }, 
+{ name: Danaus plexippus  Monarch, }, 
+{ name: Phyciodes campestris montana  Montana Crescent, }, 
+{ name: Speyeria mormonia   Mormon Fritillary, }, 
+{ name: Nymphalis antiopa   Mourning Cloak, }, 
+{ name: Phyciodes mylitta   Mylitta Crescent, }, 
+{ name: Speyeria callippe nevadensis  Nevada Silverspot, }, 
+{ name: Phyciodes campestris inornatus  Northeastern California Crescent, }, 
+{ name: Chlosyne palla  Northern Checkerspot, }, 
+{ name: Cercyonis pegala boopis   Ox-Eyed Satyr, }, 
+{ name: Vanessa cardui  Painted Lady, }, 
+{ name: Danaus gilippus   Queen, }, 
+{ name: Vanessa atalanta  Red Admiral, }, 
+{ name: Polygonia satyrus   Satyr Anglewing, }, 
+{ name: Cercyonis oetus   Small Wood-Nymph, }, 
+{ name: Euphydryas chalcedona   Variable Checkespot, Chalcedon Checkerspot, }, 
+{ name: Vanessa annabella   West Coast Lady, }, 
+{ name: Vanessa virginiensis  West Virginia Lady, American Painted Lady, }, 
+{ name: Boloria epithore  Western Meadow Fritillary, }, 
+{ name: Polygonia zephyrus  Zephyr Anglewing, }, 
+{ name: Speyeria zerene   Zerene Fritillary, }, 
+
+Lycaenidae
+The Gossamer-wings are a very diverse and complex family with at least 4750 species worldwide. In California, they can be grouped into the coppers (subfamily Lycaeninae), the blues (subfamily Polyommatinae), and the hairstreaks (subfamily Theclinae). Many species have mutualistic relationships with ants (myrmecophily) where the caterpillar excretes complex carbohydrates through specialized glands for the ants (similar to aphids). In return, the ants defend the caterpillar from predators and parasitoids. While this relationship is usually facultative, the mutualism turns into trickery in some Lycaenid species and the butterfly caterpillars switch from being herbivores to become obligate predators on ant larvae inside the ant mound. As long as the caterpillar continues to produces sugary rewards for the ants, the ants are willing to accept, or are oblivious to, the carnage around them. Other Lycaenid caterpillars are predators on aphids being tended by ants.
+
+{ name: Lycaeides melissa melissa   "Agricultural" Melissa Blue, },
+{ name: Brephidium exile  (Western) Pygmy Blue, },
+{ name: Plebejus acmon  Acmon Blue, },
+{ name: Lycaeides idas anna   Anna Blue, },
+{ name: Glaucopsyche piasus   Arrowhead Blue, },
+{ name: Satyrium behrii   Behr's Hairstreak, },
+{ name: Lycaena heteronea   Blue Copper, "Varied Blue", },
+{ name: Callophrys dumetorum  Bramble Hairstreak, },
+{ name: Satyrium californica  California Hairstreak, },
+{ name: Lycaena arota virginiensis  Desert Tailed Copper, },
+{ name: Euphilotes enoptes  Dotted Blue, },
+{ name: Everes comyntas   Eastern Tailed Blue, },
+{ name: Lycaena editha  Edith's Copper, },
+{ name: Satyrium auretorum  Gold-Hunter's Hairstreak, },
+{ name: Habrodais grunus  Golden Hairstreak, Golden Oak Hairstreak, },
+{ name: Lycaena gorgon  Gorgon Copper, },
+{ name: Agriades podarce  Gray Blue, },
+{ name: Strymon melinus   Gray Hairstreak, Common Hairstreak, },
+{ name: Lycaena xanthoides  Great Copper, },
+{ name: Atlides halesus   Great Purple Hairstreak, },
+{ name: Plebejus saepiolus  Greenish Blue, },
+{ name: Plebejus icarioides   Icarioides Blue, Boisduval's Blue, },
+{ name: Mitoura johnsoni  Johnson's Hairstreak, },
+{ name: Mitoura gryneus chalcosiva  Juniper Hairstreak, },
+{ name: Callophrys sheridanii lemberti  Lembert's Green Hairstreak, },
+{ name: Plebejus lupini   Lupine Blue, },
+{ name: Lycaena cupreus   Lustrous Copper, },
+{ name: Leptotes marina   Marine Blue, },
+{ name: Lycaena mariposa  Mariposa Copper, },
+{ name: Incisalia mossii  Moss' Elfin, },
+{ name: Satyrium tetra  Mountain-Mahogany Hairstreak, },
+{ name: Mitoura gryneus nelsoni   Nelson's Hairstreak, },
+{ name: Lycaena helloides   Purplish Copper, },
+{ name: Hemiargus isola   Reakirt's Blue, },
+{ name: Lycaena rubidus   Ruddy Copper, },
+{ name: Satyrium saepium  Sepia Hairstreak, },
+{ name: Plebejus shasta   Shasta Blue, },
+{ name: Glaucopsyche lygdamus   Silvery Blue, },
+{ name: Lycaena nivalis   Snowy Copper, Lilac-Bordered Copper, },
+{ name: Philotes sonorensis   Sonoran Blue, },
+{ name: Satyrium fuliginosum semiluna   Sooty Gossamer-Wing, },
+{ name: Satyrium fuliginosum fuliginosum  Sooty Gossamer-Wing, },
+{ name: Celastrina ladon echo   Spring Azure, Echo Blue, },
+{ name: Euphilotes battoides  Square-Spotted Blue, },
+{ name: Lycaena arota arota   Tailed Copper, },
+{ name: Mitoura spinetorum  Thicket Hairstreak, },
+{ name: Incisalia augustinus iroides  Western Brown Elfin, },
+{ name: Incisalia eryphon   Western Pine Elfin, },
+{ name: Everes amyntula   Western Tailed Blue, },
+{ name: Satyrium sylvinus   Willow Hairstreak, },
+
+Papilionidae
+This family contains the largest and some of the most recognizable of all California butterflies. There are about 600 species worldwide. The swallowtails (subfamily Papilioninae) usually have at least one set of long tails on the hindwings and have stripes of black and yellow or white. Our genera are Battus and Papilio. The parnassians (subfamily Parnassiinae), also sometimes called Apollos, lack tails and are ghostly transluscent white or yellow-white with black and red spots: not your typical swallowtail. Our two Parnassius species are the only California representatives of this relatively small group.
+
+{ name: Papilio zelicaon  Anise Swallowtail, }, 
+{ name: Parnassius phoebus behrii   Behr's Parnassian, }, 
+{ name: Parnassius clodius  Clodius Parnassian, }, 
+{ name: Papilio indra   Indra Swallowtail, }, 
+{ name: Papilio eurymedon   Pale Swallowtail, }, 
+{ name: Battus philenor   Pipevine Swallowtail, }, 
+{ name: Papilio multicaudatus   Two-Tailed Swallowtail, }, 
+{ name: Papilio rutulus   Western Tiger Swallowtail, }, 
+{ name: Pieridae, }, 
+
+Pierids are rather conspicuous white, yellow, or orange butterflies, with around 1000 species worldwide. They primarily feed on plants in the legume and crucifer families, although some odd groups, like our Neophasia menapia, feed on conifers. Some Pierids, especially Colias sulphurs and Pieris whites, have taught us much about species recognition (based on ultraviolet reflectance patterns) and seasonally-induced polymorphism and phenotypic plasticity.
+
+{ name: Pontia beckerii   Becker's White, },
+{ name: Zerene eurydice   California Dog-Face, },
+{ name: Pontia protodice  Checkered White, },
+{ name: Phoebis sennae  Cloudless Sulphur, },
+{ name: Nathalis iole   Dainty Sulphur, },
+{ name: Euchloe hyantis lotta   East Slope Marble, },
+{ name: Pieris rapae  European Cabbage Butterfly, Imported Cabbageworm, Cabbage White, },
+{ name: Anthocharis lanceolata  Gray Marble, Boisduval's Marble, },
+{ name: Pieris napi   Gray-Veined White, },
+{ name: Euchloe ausonides   Large Marble, },
+{ name: Colias eurytheme  Orange Sulphur, Alfalfa Butterfly, },
+{ name: Neophasia menapia   Pine White, },
+{ name: Colias alexandra  Queen Alexandra's Sulphur, },
+{ name: Anthocharis sara sara   Sara Orange-Tip, },
+{ name: Euchloe hyantis hyantis   Small Marble, },
+{ name: Euchloe hyantis "foothill"  Small Marble, },
+{ name: Pontia sisymbrii  Spring White, California White, },
+{ name: Anthocharis stella  Stella Orange-Tip, },
+{ name: Anthocharis sara thoosa   Thoosa Orange-Tip, },
+{ name: Pontia occidentalis   Western White, },
+{ name: Colias philodice (eriphyle)   Yellow Sulphur, },
+
+Riodinidae
+The Metal-marks are a dramatically colored and patterned, and consist of at least 1250 species. Most of these small butterflies are Neotropical in distribution, and only one species ranges into central California. Like the Gossamer-wings, many metal-marks are myrmecophilous.
+
+{ name: Apodemia mormo  Mormon Metal-Mark,  }
+all data comes from: Information Center for the Environment (ICE) → University of California, Davis

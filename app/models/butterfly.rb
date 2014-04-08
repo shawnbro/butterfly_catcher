@@ -3,6 +3,7 @@ class Butterfly
   field :name, type: String
   field :description, type: String
   field :pointValue, type: Integer
+  field :image, type: String
   field :caught, type: Boolean, default: false
   belongs_to :game
 

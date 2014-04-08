@@ -6,11 +6,13 @@ $( document ).ready(function() {
       game.load.image('cloud', 'assets/sprites/cloud.png');
       game.load.image('cloud-2', 'assets/sprites/cloud-2.png');
       game.load.spritesheet('butterfly', 'assets/sprites/butterflysprite.png', 50, 34);
+      game.load.spritesheet('tree', 'assets/sprites/tree.png');
   }
 
   var butterfly;
   var clouds = [];
   var net;
+  var tree;
   var cursors;
 
   function create() {
@@ -23,11 +25,13 @@ $( document ).ready(function() {
 
       // Add sprites
       butterfly = game.add.sprite(Math.random()*800,Math.random()*600, 'butterfly');
+      tree = game.add.sprite(0, 0, 'tree');
+      //this adds clouds at random positions:
       for(var i = 0; i < Math.floor(Math.random()*12); i++) {
         cloud = game.add.sprite(Math.random() * 400, Math.random() * 300, 'cloud');
         clouds.push(cloud);
       }
-      net = game.add.sprite(0, 0, 'net');
+      net = game.add.sprite(400, 200, 'net');
       net.enableBody = true
       butterfly.enableBody = true;
 
@@ -36,7 +40,7 @@ $( document ).ready(function() {
       game.physics.p2.defaultRestitution = .8;
 
       // enable physical interaction between sprites
-      game.physics.enable( [ butterfly, net ], Phaser.Physics.ARCADE);
+      game.physics.enable( [ butterfly, net, clouds ], Phaser.Physics.ARCADE);
       
       // set world bounds 
       game.world.setBounds(0, 0, 800, 600);
@@ -88,13 +92,14 @@ $( document ).ready(function() {
       game.physics.arcade.collide(butterfly, net, collisionHandler, null, this);
   }
 
-  function collisionHandler (obj1, obj2) {
+  function collisionHandler (obj1, obj2, obj3) {
       //  The two sprites are colliding
       // trigger butterfly caught
-      newButterfly.catch();   
+      newButterfly.catch();
+      obj2.kill();   
       //remove sprites from canvas
-      obj1.kill();
-      obj2.kill();
+      obj1.bringToTop()
+      // obj2.kill();
       for(var i = 0; i < clouds.length; i++) {
         clouds[i].kill();
       } // and then regenerate them.
@@ -102,7 +107,6 @@ $( document ).ready(function() {
   }
 
   function render() {
-      game.debug.cameraInfo(game.camera, 32, 32);
   }
 
 }) // end document ready

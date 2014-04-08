@@ -6,6 +6,7 @@ var Butterfly = Backbone.Model.extend({
     description: null,
     pointValue: null,
     caught: false,
+    image: null,
     game_id: undefined
   },
 

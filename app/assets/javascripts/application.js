@@ -32,11 +32,17 @@ $( document ).ready(function() {
   allButterflies.fetch();
 
   newButterfly.on("change:caught", function(butterfly, caught) {
+    // only works if butterfly gets caught
     if(caught === true) {
       game.set({currentScore: parseInt(game.get('currentScore') + newButterfly.get('pointValue'))});
       game.set({highScore: window.highScore});
       $("#currentScore").text('Current Score: ' + game.get('currentScore'));
       $("#highScore").text('High Score: ' + game.get('highScore'));
+      $("#jar").empty()
+        .append("<div id='caught-butterfly'>"+newButterfly.get('name')
+          +"</br>"+newButterfly.get('description')
+          +"</br><img src='"+newButterfly.get('image')
+          +"'alt='Pretty Butterfly Picture' width='50px'/></div>");
     }
   });
 });

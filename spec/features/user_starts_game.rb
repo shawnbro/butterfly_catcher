@@ -10,6 +10,7 @@ describe 'user starts game' do
     expect(page).to have_content 'Butterfly Catcher'
     expect(page).to have_content 'Catch Butterflies!' 
     expect(page).to have_css 'canvas'
+    expect(page).to have_css '#jar'
     # expect(page).to have_css '#gameID' now in a JS window variable
     # within('#gameID') do 
     #   expect(page).to have_content('Game Id: ' + gameID)
