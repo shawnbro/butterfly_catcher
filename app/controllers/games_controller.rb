@@ -1,9 +1,9 @@
 class GamesController < ApplicationController
   
-  def index
-    @game = Game.last
-    render json: @game
-  end
+  # def index
+  #   @game = Game.last
+  #   render json: @game
+  # end
 
   def create
     @butterfly = Butterfly.all.sample

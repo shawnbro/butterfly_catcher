@@ -25,8 +25,11 @@ describe("Game", function() {
     });
 
     it("should update the current score", function() {
-      console.log(game)
       expect(game.get('currentScore')).toEqual(25);
     });
+
+    it("adds a new butterfly to the game", function() {
+
+    })
   });
 });

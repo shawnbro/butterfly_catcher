@@ -18,6 +18,7 @@
 //= require_tree ./backbone/models
 //= require_tree ./backbone/collections
 //= require phaser
+//= require_tree ./board
 
 $( document ).ready(function() {
   window.game = new Game( { _id: gameID } );
