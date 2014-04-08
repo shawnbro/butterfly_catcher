@@ -11,17 +11,11 @@ class GamesController < ApplicationController
   end
 
   def show
-    render json: Game.find_by(_id: params[:id])
+    render json: Game.find_by(_id: params[:_id])
   end
 
   def update
-    @game = Game.find_by(id: params[:_id])
-    @game.currentScore = params[:currentScore]
-    @game.highScore = params[:currentScore] if params[:currentScore] > @game.highScore
-    if @game.save
-      render json: @game
-    else
-      render status: 400, nothing: true
-    end
+    Game.where(_id: params[:_id]).update(currentScore: params["game"]["currentScore"])
+    redirect_to game_path
   end
 end

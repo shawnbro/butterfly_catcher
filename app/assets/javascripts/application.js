@@ -25,18 +25,16 @@ $( document ).ready(function() {
   window.newButterfly = new Butterfly( { game_id: gameID, 
     name: window.butterflyName, 
     description: window.butterflyDescription, 
-    pointValue: window.butterflyPointValue 
+    pointValue: window.butterflyPointValue, 
   });
   newButterfly.save();
   window.allButterflies = new ButterflyCollection( { game: window.game } );
   allButterflies.fetch();
-  // window.butterfly = new Butterfly({})
 
   newButterfly.on("change:caught", function(butterfly, caught) {
-    game.set({currentScore: parseInt(currentScore + newButterfly.get('pointValue'))});
-    game.save().done(function() {
-      $("#currentScore").text('Current Score: '+parseInt(game.get('currentScore')));
-      $("#highScore").text('High Score: ' + parseInt(game.get('highScore')));      
-    });
+    game.set({currentScore: parseInt(game.get('currentScore') + newButterfly.get('pointValue'))});
+    console.log(game.get('currentScore'))
+    $("#currentScore").text('Current Score: ' + game.get('currentScore'));
+    $("#highScore").text('High Score: ' + game.get('highScore'));
   });
 });

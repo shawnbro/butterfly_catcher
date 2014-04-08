@@ -43,7 +43,7 @@ $( document ).ready(function() {
 
       butterfly.name = 'butterfly';
       net.name = 'net';
-      
+
       butterfly.body.velocity.x = Math.random() * 200;
       butterfly.body.velocity.y = Math.random() * 200;
 
@@ -92,15 +92,15 @@ $( document ).ready(function() {
   }
 
   function collisionHandler (obj1, obj2) {
-
       //  The two sprites are colliding
-      // game.stage.backgroundColor = '#992d2d';
-      newButterfly.catch();
+      // trigger butterfly caught
+      newButterfly.catch();   
+      //remove sprites from canvas
       obj1.kill();
       obj2.kill();
       for(var i = 0; i < clouds.length; i++) {
         clouds[i].kill();
-      }
+      } // and then regenerate them.
       create();
 
 
