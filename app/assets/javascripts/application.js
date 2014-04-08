@@ -32,9 +32,12 @@ $( document ).ready(function() {
   allButterflies.fetch();
 
   newButterfly.on("change:caught", function(butterfly, caught) {
-    game.set({currentScore: parseInt(game.get('currentScore') + newButterfly.get('pointValue'))});
+    if(caught === true) {
+          game.set({currentScore: parseInt(game.get('currentScore') + newButterfly.get('pointValue'))});
     console.log(game.get('currentScore'))
     $("#currentScore").text('Current Score: ' + game.get('currentScore'));
     $("#highScore").text('High Score: ' + game.get('highScore'));
+    }
+
   });
 });

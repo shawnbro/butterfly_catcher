@@ -10,21 +10,25 @@ class ButterfliesController < ApplicationController
   end
 
   def show
+    binding.pry
   end
 
   def update
-    @butterfly = Butterfly.find(params[:_id][:$oid])
-
-    if @butterfly.save
-      render json: @butterfly
-    else
-      render status: 400, nothing: true
-    end
+    Butterfly.where(_id: params["butterfly"][:_id]["$oid"]).update(caught: params["caught"])
+     # @butterfly = Butterfly.find(params[:_id][:$oid])
+     @butterfly = Butterfly.all.sample
+     render json: Butterfly.where(caught: false).sample || Butterfly.create(name: @butterfly.name, description: @butterfly.description, pointValue: @butterfly.pointValue, caught: false)
+    #  if @butterfly.save
+    #   render json: @butterfly
+    #  else
+    #    render status: 400, nothing: true
+    # end
 
   end
 
   def new
     @butterfly = Butterfly.all.sample
+    @butterfly.caught = false;
     render json: @butterfly
   end
   
