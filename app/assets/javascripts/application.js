@@ -33,11 +33,10 @@ $( document ).ready(function() {
 
   newButterfly.on("change:caught", function(butterfly, caught) {
     if(caught === true) {
-          game.set({currentScore: parseInt(game.get('currentScore') + newButterfly.get('pointValue'))});
-    console.log(game.get('currentScore'))
-    $("#currentScore").text('Current Score: ' + game.get('currentScore'));
-    $("#highScore").text('High Score: ' + game.get('highScore'));
+      game.set({currentScore: parseInt(game.get('currentScore') + newButterfly.get('pointValue'))});
+      game.set({highScore: window.highScore});
+      $("#currentScore").text('Current Score: ' + game.get('currentScore'));
+      $("#highScore").text('High Score: ' + game.get('highScore'));
     }
-
   });
 });

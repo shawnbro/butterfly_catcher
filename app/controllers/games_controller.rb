@@ -7,7 +7,13 @@ class GamesController < ApplicationController
 
   def create
     @butterfly = Butterfly.all.sample
-    @game = Game.create!
+    if session[:game].nil?
+      @game = Game.create!
+      session[:game] = @game
+    else
+      session[:game].currentScore = 0;
+      @game = session[:game]      
+    end
   end
 
   def show

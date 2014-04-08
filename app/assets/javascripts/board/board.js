@@ -85,10 +85,7 @@ $( document ).ready(function() {
               net.body.velocity.x = 100;
           }
       }
-
       game.physics.arcade.collide(butterfly, net, collisionHandler, null, this);
-
-
   }
 
   function collisionHandler (obj1, obj2) {
@@ -102,8 +99,6 @@ $( document ).ready(function() {
         clouds[i].kill();
       } // and then regenerate them.
       create();
-
-
   }
 
   function render() {

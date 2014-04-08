@@ -2,9 +2,9 @@ describe("Game", function() {
   var butterfly;
 
   beforeEach(function() {
-    butterfly = new Butterfly( { id: 1, name: 'monarch', caught: false } );
+    butterfly = new Butterfly( { _id: 1, name: 'monarch', caught: false } );
     game = new Game;
-    gameID = 1;
+    window.gameID = 1;
   });
 
   it("has an initial high score of 0", function() {

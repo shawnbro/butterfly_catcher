@@ -15,21 +15,25 @@ class ButterfliesController < ApplicationController
 
   def update
     Butterfly.where(_id: params["butterfly"][:_id]["$oid"]).update(caught: params["caught"])
-     # @butterfly = Butterfly.find(params[:_id][:$oid])
      @butterfly = Butterfly.all.sample
+     update_session(Butterfly.find_by(_id: params["butterfly"][:_id]["$oid"]).pointValue)
      render json: Butterfly.where(caught: false).sample || Butterfly.create(name: @butterfly.name, description: @butterfly.description, pointValue: @butterfly.pointValue, caught: false)
-    #  if @butterfly.save
-    #   render json: @butterfly
-    #  else
-    #    render status: 400, nothing: true
-    # end
-
   end
 
   def new
     @butterfly = Butterfly.all.sample
     @butterfly.caught = false;
     render json: @butterfly
+  end
+
+  private
+
+  def update_session(pointValue)
+    session[:game].currentScore += pointValue
+    if session[:game].highScore < session[:game].currentScore
+      session[:game].highScore = session[:game].currentScore
+    end
+    session[:game].save
   end
   
 end
