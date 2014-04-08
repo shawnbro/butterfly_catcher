@@ -9,6 +9,7 @@ $( document ).ready(function() {
   }
 
   var butterfly;
+  var clouds = [];
   var net;
   var cursors;
 
@@ -22,8 +23,9 @@ $( document ).ready(function() {
 
       // Add sprites
       butterfly = game.add.sprite(Math.random()*800,Math.random()*600, 'butterfly');
-      for(var i = 0; i < 3; i++) {
+      for(var i = 0; i < Math.floor(Math.random()*12); i++) {
         cloud = game.add.sprite(Math.random() * 400, Math.random() * 300, 'cloud');
+        clouds.push(cloud);
       }
       net = game.add.sprite(0, 0, 'net');
       net.enableBody = true
@@ -96,6 +98,9 @@ $( document ).ready(function() {
       newButterfly.catch();
       obj1.kill();
       obj2.kill();
+      for(var i = 0; i < clouds.length; i++) {
+        clouds[i].kill();
+      }
       create();
 
 
