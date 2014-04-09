@@ -1,0 +1,71 @@
+
+@import url(http://fonts.googleapis.com/css?family=Dosis:300);
+
+
+
+h1 {
+  font-size: 36;
+  font-weight: 800;
+  font-family: 'Dosis', 'Sans Serif';
+  text-align: center;
+  padding-top: 28px;
+}
+h2 {
+  font-size: 1.25em;
+  text-align: center;
+  font-weight: 100;
+}
+canvas {
+  position: relative;
+  margin: 0px auto;
+  padding-top: 2%;
+}
+#gameBoard {
+  width: 100%;
+  height: 75%;
+  border: 2px solid rgba(10, 10, 100, .2);
+}
+
+.butterflyToCatch {
+  width: 2px;
+  height: 2px;
+  border: 2px solid;
+}
+
+#butterflyImage {
+  width: 2px;
+  height: 2px;
+  border: 2px solid black;
+}
+
+#jar {
+  width: 15%;
+  height: 158px;
+  display: inline-block;
+  border-top: 14px solid black;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-top: .5%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-weight: 100;
+}
+
+#score-board {
+  font-weight: 100;
+  display: block;
+  text-align: left;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#caught-butterfly {
+  padding: .2em;
+  font-size: 12px;
+}
