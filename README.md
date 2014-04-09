@@ -12,4 +12,4 @@
   - Phaser Game Library for actual game play, loading sprites, physics, & enabling user interaction
   
 ### The Process:
-- This application was conceived and mostly built in a one-week long 'sprint', conceived to mimic the Agile development process.  Most of the models & behavior are tested and there is a list of user stories at <a href=''>this Pivotal tracker page</a>.
+- This application was conceived and mostly built in a one-week long 'sprint', conceived to mimic the Agile development process.  Most of the models & behavior are tested and there is a list of user stories at <a href='https://www.pivotaltracker.com/s/projects/1052416'>this Pivotal tracker page</a>.
