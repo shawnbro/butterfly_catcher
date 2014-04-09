@@ -6,6 +6,7 @@ gem 'rails', '4.0.3'
 gem 'phaser-rails'
 
 gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
+gem 'bson_ext'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
