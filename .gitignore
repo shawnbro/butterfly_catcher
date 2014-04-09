@@ -21,6 +21,7 @@
 **.orig
 rerun.txt
 pickle-email-*.html
+/config/initializers/database.rb
 
 ## Environment normalisation:
 /.bundle
