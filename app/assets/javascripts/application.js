@@ -41,8 +41,9 @@ $( document ).ready(function() {
       $("#jar").empty()
         .append("<div id='caught-butterfly'>"+newButterfly.get('name')
           +"</br>"+newButterfly.get('description')
-          +"</br><img src='"+newButterfly.get('image')
-          +"'alt='Pretty Butterfly Picture' width='50px'/></div>");
+          // +"</br><img src=url('"+newButterfly.get('image')
+          // +"')alt='Pretty Butterfly Picture' width='50px'
+        +"</br>Points: "+newButterfly.get('pointValue')+"</div>");
     }
   });
 });
