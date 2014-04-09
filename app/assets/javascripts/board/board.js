@@ -15,7 +15,7 @@ $( document ).ready(function() {
   function create() {
     //this adds clouds at random positions:
     for(var i = 0; i < Math.floor(Math.random()*360); i++) {
-      cloud = game.add.sprite(Math.random() * 400, Math.random() * 300, 'cloud');
+      cloud = game.add.sprite(Math.random() * 800, Math.random() * 600, 'cloud');
       clouds.push(cloud);
     }
     // Enable P2 Physics
@@ -100,7 +100,9 @@ $( document ).ready(function() {
   }
 
   function render() {
-  
+    $( 'button' ).on("click", function() {
+      console.log('hi');
+    })
   }
 
 }) // end document ready

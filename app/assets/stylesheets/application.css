@@ -78,3 +78,8 @@ canvas {
   width: 800px;
   margin: 0 auto;
 }
+
+#caught-butterfly {
+  padding: .2em;
+  font-size: 12px;
+}
