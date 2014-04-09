@@ -5,5 +5,5 @@ class Game
   field :currentScore, type: Integer, default: 0
   has_many :butterflies
 
-  store_in collection: "games", database: "butterfly_catcher_development"
+  store_in collection: "games", database: "butterfly_catcher_production"
 end

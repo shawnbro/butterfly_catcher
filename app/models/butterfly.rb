@@ -7,6 +7,6 @@ class Butterfly
   field :caught, type: Boolean, default: false
   belongs_to :game
 
-  store_in collection: "butterflies", database: "butterfly_catcher_development"
+  store_in collection: "butterflies", database: "butterfly_catcher_production"
 
 end
