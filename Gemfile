@@ -5,6 +5,7 @@ gem 'rails', '4.0.3'
 
 gem 'phaser-rails'
 
+gem 'mongo'
 gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
 gem 'bson_ext'
 
