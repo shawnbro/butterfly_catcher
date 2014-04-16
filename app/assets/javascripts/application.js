@@ -21,7 +21,6 @@
 //= require_tree ./board
 
 $( document ).ready(function() {
-  db = new Mongo().getDB("myDatabase");
   window.game = new Game( { _id: gameID } );
   window.newButterfly = new Butterfly( { game_id: gameID, 
     name: window.butterflyName, 
