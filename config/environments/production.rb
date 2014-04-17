@@ -1,4 +1,5 @@
 ButterflyCatcher::Application.configure do
+  Mongoid.load!(File.join(File.dirname(__FILE__), "config", "mongoid.yml"))
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
