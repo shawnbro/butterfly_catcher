@@ -6,7 +6,6 @@ ruby '2.1.0'
 
 gem 'phaser-rails'
 
-gem 'mongo'
 gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
 gem 'bson_ext'
 gem 'rails_12factor'
