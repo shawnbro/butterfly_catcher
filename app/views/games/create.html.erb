@@ -4,9 +4,8 @@
   <h2><%= 'Catch Butterflies!'%></h2>
   <div id='score-board'>
     <div id='currentScore'>Current Score: <%= @game.currentScore %></div>
-    <div id='highScore'>High Score: <%= session[:game].highScore %> </div></br>
+    <div id='highScore'>High Score: <%= session[:game].highScore %> </div></br></div>
     <div id='instructions'> Use arrow keys to move net around.  </br>Only one butterfly at a time can be caught. </br> All caught butterflies fly behind the clouds. </div>
-  </div>
   <script>
     window.gameID = "<%= @game._id %>";
     window.currentScore = parseInt("<%= @game.currentScore %>");

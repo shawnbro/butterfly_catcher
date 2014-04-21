@@ -100,9 +100,7 @@ $( document ).ready(function() {
   }
 
   function render() {
-    $( 'button' ).on("click", function() {
-      console.log('hi');
-    })
+
   }
 
 }) // end document ready
