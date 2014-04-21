@@ -3,8 +3,8 @@
   <h1>Butterfly Catcher</h1>
   <h2><%= 'Catch Butterflies!'%></h2>
   <div id='score-board'>
-    <div id='currentScore'>Current Score: <strong><%= @game.currentScore %></strong></div>
-    <div id='highScore'>High Score: <strong><%= session[:game].highScore %> </strong></div></br></div>
+    <div id='currentScore'>Current Score: <%= @game.currentScore %></div>
+    <div id='highScore'>High Score: <%= session[:game].highScore %> </div></br></div>
     <div id='instructions'> Use arrow keys to move net around.  </br>Only one butterfly at a time can be caught. </br> All caught butterflies fly behind the clouds. </div>
   <script>
     window.gameID = "<%= @game._id %>";
