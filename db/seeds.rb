@@ -1,15 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-# butterflies = ["Swallowtail", "Papilionidae", "Pieridae", "Lycaenidae", "Riodinidae", "Nymphalidae", "Libytheinae", " Danainae", "Tellervinae", "Ithomiinae", "Calinaginae", " Morphinae", "Satyrinae", "Charaxinae", "Biblidinae", "Apaturinae", "Nymphalinae", "Limenitidinae", "Heliconiinae"]
-
-# butterflies.each do |butterfly|
-#   Butterfly.create({ name: butterfly })
-# end
 butterflies = [{ name: "Carterocephalus palaemon  aka Arctic Skipper", description: "The Arctic Skipper is not truly arctic, but is circumboreal, occurring in cool, wooded, usually streamside habitats across northern Eurasia and North America. Our transect is right at its southern range limit in California. ", pointValue: 25 , image: "http://butterfly.ucdavis.edu/files/butterfly/img/butterfly/small/s_Carterocephalus_palaemon.jpg" }, 
 
 { name: "Hesperia columbia aka Columbian Skipper", description: "The Columbian Skipper is found mainly in the California Coast Range. In the Sierra Nevada it is known from only a handful of localities, mainly on serpentine. Rare!", pointValue: 50 , image: "http://butterfly.ucdavis.edu/files/butterfly/img/butterfly//med/m_Hesperia_columbia.jpg" }, 
@@ -21,3 +9,18 @@ butterflies = [{ name: "Carterocephalus palaemon  aka Arctic Skipper", descripti
 butterflies.each do |butterfly|
   Butterfly.create!(name: butterfly[:name], description: butterfly[:description], pointValue: butterfly[:pointValue], image: butterfly[:image]);
 end
+# #get butterfly names
+# butterflies.each do |b|
+#  unless b.split(/\w([A-Z])/)[0].nil? || b.split(/\w([A-Z])/)[1].nil? || b.split(/\w([A-Z])/)[2].nil?
+# new_b << {name: b.split(/(\w[A-Z])/)[0] + b.split(/(\w[A-Z])/)[1].split("")[0] + " aka " +b.split(/(\w[A-Z])/)[1].split("")[1] + b.split(/(\w[A-Z])/)[2]}
+# end
+# end
+# #get butterfly descriptions
+# new_b.each do |butterfly|
+# unless butterfly[:name].split(" aka ")[0].split(" ").count != 2
+# doc = Nokogiri::HTML(open('http://butterfly.ucdavis.edu/butterfly/' + butterfly[:name].split(" aka ")[0].gsub(" ", "/"))) 
+# doc.css('p').each do |p|
+# puts p.content 
+# end
+# end
+# end
