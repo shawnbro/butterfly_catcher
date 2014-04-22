@@ -2,7 +2,6 @@ class GamesController < ApplicationController
 
   def create
     @butterfly = Butterfly.all.sample
-    binding.pry
     if session[:game].nil?
       @game = Game.create!
       session[:game] = @game
